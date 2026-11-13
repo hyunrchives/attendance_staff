@@ -15,7 +15,7 @@ const Login = () => {
     setLoading(true);
     setMessage('');
 
-    if (email !== 'admin@nemintsco.com') {
+    if (email !== '') {
       setMessage('❌ Access Denied: Only the admin account is allowed.');
       setLoading(false);
       return;
