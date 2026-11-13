@@ -1,6 +1,7 @@
 // src/AttendanceScanner.jsx
 import React, { useRef, useState } from 'react';
 import Webcam from 'react-webcam';
+import { Link } from 'react-router-dom';
 import { supabase } from './supabaseClient';
 
 const AttendanceScanner = () => {
@@ -62,7 +63,7 @@ const AttendanceScanner = () => {
       <div className="scan-wrap">
         <header className="scan-top glass">
           <div className="brand"><span className="brand-mark">N</span>Attendance</div>
-          <a className="btn ghost" href="/login">Admin</a>
+          <Link className="btn ghost" to="/login">Admin</Link>
         </header>
 
         <section className="scan-card glass">
