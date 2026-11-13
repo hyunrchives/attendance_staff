@@ -15,7 +15,7 @@ const Login = () => {
     setLoading(true);
     setMessage('');
 
-    if (email !== '') {
+    if (email !== 'admin@nemintsco.com') {
       setMessage('❌ Access Denied: Only the admin account is allowed.');
       setLoading(false);
       return;
@@ -41,7 +41,7 @@ const Login = () => {
 
         <label className="field">
           <span>Email</span>
-          <input type="email" value={email} onChange={(e) => setEmail(e.target.value)} required placeholder="admin@nemintsco.com" autoComplete="email" />
+          <input type="email" value={email} onChange={(e) => setEmail(e.target.value)} required placeholder="" autoComplete="email" />
         </label>
 
         <label className="field">
